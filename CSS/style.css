@@ -1,0 +1,17 @@
+/* FOND HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ba
+}
+
+/* FOOTER */
+
+ .p-10 {
+    padding: 5rem;
+ }
+
+ .bg-gris {
+    background-color: rgb(56, 55, 55);
+ }

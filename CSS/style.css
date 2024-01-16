@@ -1,13 +1,15 @@
-.px-lg-6 {
-    padding-right: 14rem !important;
-    padding-left: 14rem !important;
-}/* FOND HTML */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    ba
 }
+
+
+/*padding*/
+.px-lg-6 {
+    padding-right: 14rem !important;
+    padding-left: 14rem !important;
+}/* FOND HTML */
 
 /* FOOTER */
 
@@ -18,3 +20,15 @@
  .bg-gris {
     background-color: rgb(56, 55, 55);
  }
+
+ .w-10{
+    width: 10% !important;
+  }
+
+ .w-60{
+    width: 60% !important;
+  }
+
+.top-30 {
+    top: 30% !important;
+  }

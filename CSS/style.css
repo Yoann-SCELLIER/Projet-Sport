@@ -33,3 +33,14 @@
     top: 30% !important;
   }
 
+  footer a:hover {
+   color: rgb(191, 148, 92)!important;
+  }
+
+  /* .foot-hr::before {
+   content: '';
+   width: 10%;
+   border-bottom: 3px solid #ccc;
+   margin-right: 0.5em;
+  } */
+

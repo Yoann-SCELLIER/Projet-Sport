@@ -1,46 +1,187 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
+/* --- Spacing --- */
+
+.w-10 {
+   width: 10% !important;
+}
+
+.w-60 {
+   width: 60% !important;
+}
+
+.top-30 {
+   top: 30% !important;
+}
+
+.w-45 {
+   width: 45%;
+}
+
+/* --- FIN Spacing --- */
+
+
+/* suppression style balise LI */
+
+.li-d-n {
+   list-style: none;
+}
+
+/* traittement text */
+.text-end {
+   text-align: end !important;
+}
 
 /*padding*/
 .px-lg-6 {
-    padding-right: 14rem !important;
-    padding-left: 14rem !important;
-}/* FOND HTML */
+   padding-right: 14rem !important;
+   padding-left: 14rem !important;
+}
+
+/* FOND HTML */
 
 /* FOOTER */
 
- .p-10 {
-    padding: 5rem;
- }
+.p-10 {
+   padding: 5rem;
+}
 
- .bg-gris {
-    background-color: rgb(56, 55, 55);
- }
+.bg-gray {
+   background-color: rgb(56, 55, 55);
+}
 
- .w-10{
-    width: 10% !important;
-  }
+.bg-secondary-gray {
+   background-color: rgb(216, 205, 205);
+}
 
- .w-60{
-    width: 60% !important;
-  }
 
-.top-30 {
-    top: 30% !important;
-  }
 
-  footer a:hover {
-   color: rgb(191, 148, 92)!important;
-  }
+footer a:hover {
+   color: rgb(191, 148, 92) !important;
+}
 
-  /* .foot-hr::before {
+/* .foot-hr::before {
    content: '';
    width: 10%;
    border-bottom: 3px solid #ccc;
    margin-right: 0.5em;
   } */
 
+/* ---------- Section Activités ----------  */
+#act1 {
+   height: 400px;
+   background-image: url(../assets/img/gallery/activities/bg_activite_1.jpg) !important;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 0;
+   background-color: brown;
+
+}
+
+#act2 {
+   height: 400px;
+   background: url(../assets/img/gallery/activities/bg_activite_2.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 0;
+}
+
+#act3 {
+   height: 400px;
+   background: url(../assets/img/gallery/activities/bg_activite_3.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 0;
+}
+
+#act4 {
+   height: 400px;
+   background: url(../assets/img/gallery/activities/bg_activite_4.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin: 0;
+}
+
+.act-hr {
+   bottom: 10%;
+}
+
+
+.act-hr a::after {
+   content: '';
+   border-bottom: solid;
+   width: 8%;
+   margin-top: 1%;
+   transition: 0.2s;
+}
+
+.act-hr a:hover::after {
+   transition: 0.2s;
+   width: 55%;
+}
+
+/* ---------- FIN Section Activités ----------  */
+
+/* ---------- Section Actualités ----------  */
+
+
+
+
+.plus-hr a::after {
+   content: '';
+   border-bottom: solid;
+   width: 25%;
+   margin-top: 1%;
+   transition: 0.3s;
+}
+
+.plus-hr a:hover::after {
+   transition: 0.2s;
+   width: 100%;
+}
+
+.ending {
+   background: red;
+}
+/* boutton formulaire */
+
+.btn-form {
+   --bs-btn-padding-x: 3rem;
+   --bs-btn-padding-y: 0.375rem;
+   --bs-btn-font-size: 1rem;
+   --bs-btn-font-weight: 400;
+   --bs-btn-line-height: 1.5;
+   --bs-btn-color: var(--bs-body-color);
+   --bs-btn-bg: transparent;
+   --bs-btn-border-width: var(--bs-border-width);
+   --bs-btn-border-color: transparent;
+   --bs-btn-hover-border-color: transparent;
+   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+   --bs-btn-disabled-opacity: 0.65;
+   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+   display: inline-block;
+   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+   font-family: var(--bs-btn-font-family);
+   font-size: var(--bs-btn-font-size);
+   font-weight: var(--bs-btn-font-weight);
+   line-height: var(--bs-btn-line-height);
+   color: var(--bs-btn-color);
+   text-align: center;
+   text-decoration: none;
+   vertical-align: middle;
+   cursor: pointer;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   user-select: none;
+   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+   border-radius: var(--bs-btn-border-radius);
+   background-color: var(--bs-btn-bg);
+}

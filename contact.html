@@ -13,83 +13,117 @@
 <body>
 
     <main>
+        <!-- liste contact -->
+        
+        <!-- div qui contient coordonée "complet" + le formulaire "complet" -->
+        <div class="container-fluid p-4 row row-cols-sm-3 row-cols-md-1 row-cols-lg-2 row-cols-xxl-2 p-0 d-flex align-items-">
 
-        <div class="container-fluid col-8">
-            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-                <div class="col">
-                    <div class="col">
-                        <h6 class="fw-bold">nos coordonées</h6>
+            <!-- div pour coordonnée "complet" -->
+            <div class="container row row-cols-2 d-flex justify-content-end p-0"> 
+                
+                <!-- div pour img trait-->
+                <div class="m-3">
+                    <div class="">                
+                        <h6 class="fs-4 fw-bold text-uppercase">nos coordonées</h6>
+                        <img src="assets\img\icons\bg_titre.jpg">
                     </div>
-                    <div class="col">
-                        <p>Studio Sport & Coaching</p>
-                        <p>01 Allée Marie Politzer</p>
-                        <p>64200 Biarritz</p>
-                    </div>
-                    <div class="col">
-                        <p class="fw-bold">Téléphone</p>
-                        <p>05 59 47 84 18</p>
-                    </div>
-                    <div class="col">
-                        <p class="fw-bold">Horaires</p>
-                        <p>Du Lundi au Vendredi</p>
-                        <p>dde 8h à 14h de 16 à 21h</p>
-                        <p>Le Samedi</p>
-                        <p>de 10h à 13h</p>
-                    </div>
-                    <div class="col">
-                        <p class="fw-bold">Email</p>
-                        <p>Contact (at) studiobiarritz.com</p>
-                        <p>ou via ce formulaire</p>
-                    </div>
+                    <ul class="col li-d-n my-4">
+                        <li class="fw-bold">Studio Sport & Coaching</li>
+                        <li>01 Allée Marie Politzer</li>
+                        <li>64200 Biarritz</li>
+                    </ul>        
+                    <ul class="col li-d-n my-4">
+                        <li class="fw-bold">Téléphone</li>
+                        <li>05 59 47 84 18</li>
+                    </ul>
+                    <ul class="col li-d-n my-4">
+                        <li class="fw-bold">Horaires</li>
+                        <li>Du Lundi au Vendredi</li>
+                        <li>dde 8h à 14h de 16 à 21h</li>
+                        <li>Le Samedi</li>
+                        <li>de 10h à 13h</li>
+                    </ul>
+                    <ul class="col li-d-n my-4">
+                        <li class="fw-bold">Email</li>
+                        <li>Contact (at) studiobiarritz.com</li>
+                        <li>ou via ce formulaire</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- formulaire de contacte-->
+            
+            <!-- div pour formulaire "complet" + titre -->
+            <div class="col"> 
+
+                <!-- div pour titre -->
+                <div class=""> 
+                    <h6 class="fs-4 fw-bold text-uppercase">notre formulaire</h6>
                 </div>
 
-                <div class="container row">
-                    <div class="col">
-                        <ul>
-                            <div class="d-flex align-items-center">
-                                <li class="p-2 m-2">
-                                    <input type="text" id="name" name="user_name" placeholder="VOTRE NOM">
-                                </li>
-                                <li>
-                                    <input type="text" id="first_name" name="user_first_name"
-                                        placeholder="VOTRE PRENOM">
-                                </li>
-                            </div>
+                <!-- div pour logo trait -->
+                <div class="col p-2">
+                    <img src="assets\img\icons\bg_titre.jpg">
+                </div>
 
-                            <div class="d-flex align-items-center">
-                                <li class="p-2 m-2">
-                                    <input class="w-100" type="number" id="phone" name="user_number" placeholder="VOTRE TELEPHONE">
+                <!-- div qui contient formulaire + bouton-->
+                <div class="col p-0"> 
+
+                    <!-- div pour formulaire-->
+                    <div class="d-flex row row-cols-1 col"> 
+                        <ul class="li-d-n">
+                            <div class="d-flex align-items-center row row-cols-2 ">
+                                <li class="p-2">
+                                    <input class="w-100 bg-secondary-gray" type="text" id="name" name="user_name" placeholder="VOTRE NOM">
                                 </li>
-                                <li>
-                                    <input type="email" id="mail" name="user_mail" placeholder="VOTRE EMAIL">
-                                </li>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <li class="p-2 m-2">
-                                    <select name="sujet" id="sujet" required>
-                                        <option value="" disabled selected hidden>SUJET</option>
-                                        <option value="renseignement salle">RENSEIGNEMENT SALLE</option>
-                                        <option value="prix">RENSEIGNEMENT TARIF / PRIX / ABONNEMENT</option>
-                                        <option value="rendez-vous">DEMANDE DE RENDEZ-VOUS</option>
-                                        <option value="autre">AUTRE DEMANDE</option>
-                                    </select>
+                                <li>   
+                                    <input class="w-100 bg-secondary-gray" type="text" id="first_name" name="user_first_name" placeholder="VOTRE PRENOM">
                                 </li>
                             </div>
-                            <li class="p-2 m-2">
-                                <textarea id="msg" name="user_message" class="w-100" placeholder="VOTRE MESSAGE"></textarea>
-                            </li>
+                            <div class="d-flex align-items-center row row-cols-2 col">
+                                <div class="p-2">
+                                    <li>
+                                        <input class="w-100 bg-secondary-gray" type="number" id="phone" name="user_number" placeholder="VOTRE TELEPHONE">
+                                    </li>
+                                </div>
+                                <div class="">
+                                    <li>
+                                        <input class="w-100 bg-secondary-gray" type="email" id="mail" name="user_mail" placeholder="VOTRE EMAIL">
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center row row-cols-1 col">
+                                <div class="p-2 ">
+                                    <li>
+                                        <select class="w-100 bg-secondary-gray" name="sujet" id="sujet" required>
+                                            <option value="" disabled selected hidden>SUJET</option>
+                                            <option value="renseignement salle">RENSEIGNEMENT SALLE</option>
+                                            <option value="prix">RENSEIGNEMENT TARIF / PRIX / ABONNEMENT</option>
+                                            <option value="rendez-vous">DEMANDE DE RENDEZ-VOUS</option>
+                                            <option value="autre">AUTRE DEMANDE</option>
+                                        </select>
+                                    </li>
+                                </div>
+                            </div>
+                            <form class="d-flex align-items-center">
+                                <li class="p-2 row row-cols-1 col">
+                                    <textarea class="w-100 bg-secondary-gray form-control" id="msg" style="bg-secondary-gray" name="user_message" placeholder="VOTRE MESSAGE"></textarea>
+                                </li>
+                            </form>
                         </ul>
-                        <button type="submit" class="btn btn-warning">ENVOYER</button>
-
+                    </div>
+                    
+                    <!-- div pour bouton -->
+                    <div class="p-2">
+                        <button type="submit" class="btn-form btn-warning">ENVOYER</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        
     </main>
 
-    <footer class="bg-gris">
-
+    <footer class="bg-gray">
         <div class="row g-0 row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
             <div class="col">
                 <img src="assets\img\gallery\image_map.jpg" class="w-100 img-fluid" alt="map">
@@ -97,78 +131,106 @@
         </div>
 
         <div>
-            <div class="container-fluid p-0">
-                <div class="row g-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
-                    <div class="col">
-                        <img src="assets\img\gallery\instagram\infos.jpg" class="w-100 img-fluid" alt="infos">
-                    </div>
-                    <div class="col">
-                        <img src="assets\img\gallery\instagram\photos.jpg" class="w-100 img-fluid" alt="photos">
-                    </div>
-                    <div class="col">
-                        <img src="assets\img\gallery\instagram\photos.jpg" class="w-100 img-fluid" alt="promos">
-                    </div>
-                    <div class="col">
-                        <img src="assets\img\gallery\instagram\tutos.jpg" class="w-100 img-fluid" alt="tutos">
-                    </div>
-                    <div class="col">
-                        <img src="assets/img/gallery/instagram/videos.jpg" class="w-100 img-fluid" alt="videos">
-                    </div>
-                    <div class="col">
-                        <img src="assets/img/gallery/instagram/videos.jpg" class="w-100 img-fluid" alt="videos">
-                    </div>
+            <div class="container-fluid p-0 text-center">
+              <div class="row g-0 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
+                <div class="col">
+                  <img src="assets\img\gallery\instagram\infos.jpg" class="w-100 img-fluid" alt="infos">
                 </div>
+                <div class="col">
+                  <img src="assets\img\gallery\instagram\photos.jpg" class="w-100 img-fluid" alt="photos">
+                </div>
+                <div class="col">
+                  <img src="assets\img\gallery\instagram\photos.jpg" class="w-100 img-fluid" alt="promos">
+                </div>
+                <div class="col">
+                  <img src="assets\img\gallery\instagram\tutos.jpg" class="w-100 img-fluid" alt="tutos">
+                </div>
+                <div class="col">
+                  <img src="assets/img/gallery/instagram/videos.jpg" class="w-100 img-fluid" alt="videos">
+                </div>
+                <div class="col">
+                  <img src="assets/img/gallery/instagram/videos.jpg" class="w-100 img-fluid" alt="videos">
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="container-fluid p-0 text-light">
-            <div class="row g-0 d-flex row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-                <div class="container p-4 col">
-                    <div class="d-flex align-items-center">
-                        <img class="p-2" src="assets\img\icons\logo_footer.png" alt="logo footer le studio">
-                        <h6 class="fw-bold">à propos</h6>
-                    </div>
-                    <div class="col p-3">
-                        <p>2018 &copy; Studio Sport & Coaching Biarritz</p>
-                        <p>Salle de sport, de fitness et de crossfit à
-                            Biarritz - RCS : 0000 000 000</p>
-                        <p class="fw-bold text-decoration-underline">Mentions légales</p>
-                    </div>
+          </div>
+          <!--FIN DIV-->
+        
+          <div class="container-fluid p-0 text-light ">
+            <div class="p-5">
+              <!--A PROPOS-->
+              <div class=" row px-5">
+                <div class="container p-4 col-lg-3 ">
+                  <div class="d-flex align-items-center h-25 mb-2">
+                    <img class="pe-2" src="assets\img\icons\logo_footer.png" alt="logo footer le studio">
+                    <h5 class="fw-bold">Á PROPOS
+                  </div>
+                  <div class="">
+                    <ul class="list-unstyled">
+                      <li class="fw-bold"> 2018 &copy; Studio Sport Biarritz</li>
+                      <li> Salle de sport, de fitness et de crossfit à Biarritz Pays basque</li>
+                      <li>RCS : 0000 000 000</li>
+                      <li><a class="text-light fw-bold" href="404.html" target="_blank">Mentions légales</a></p>
+                      </li>
+        
+                    </ul>
+        
+                  </div>
                 </div>
-
-                <div class="container p-4 col ">
-                    <div class="d-flex align-items-center">
-                        <h6 class="fw-bold">studio sport corporate</h6>
-                    </div>
-                    <div class="col">
-                        <p>Studio Center : créez votre studio</p>
-                        <p>Offres Spéciales C.E.</p>
-                        <p>Devenir partenaire</p>
-                    </div>
+                <!--STUDIO SPORT CORPORATE-->
+                <div class="container p-4 col-lg ">
+        
+                  <div class="d-flex align-items-center h-25">
+                    <h5 class="fw-bold">STUDIO SPORT CORPORATE</h5>
+                  </div>
+                  <div class="mt-2 row align-items-center">
+                    <ul class="list-unstyled mw-">
+                      <li><a href="404.html " target="_blank" class=" foot-hr text-decoration-none text-light"><img
+                            class="w-10 me-2" src="assets\img\icons\bg_titre_blanc.jpg" alt="">Studio Center : créez votre
+                          studio </a>
+                      <li><a href="404.html " target="_blank" class="text-decoration-none text-light"><img class="w-10 me-2"
+                            src="assets\img\icons\bg_titre_blanc.jpg" alt="">Offres Spéciales C.E.</a>
+                      <li><a href="404.html " target="_blank" class="text-decoration-none text-light"><img class="w-10 me-2"
+                            src="assets\img\icons\bg_titre_blanc.jpg" alt="">Devenir partenaire</a>
+                    </ul>
+                  </div>
                 </div>
-
-                <div class="container p-4 col">
-                    <div class="d-flex align-items-center">
-                        <h6 class="fw-bold">fitness, crossfit et training au pays basque</h6>
-                    </div>
-                    <div class="col">
-                        <p>Coach personnel de sport à Biarritz, Coach personnel de sport à Anglet, Salle de sport BAB,
-                            Fitness à Biarritz, Sessions de Fitness à Anglet, Fitness sur le BAB,
-                            Autre mot clé + ville, Autre mot clé + ville, Autre mot clé + ville
-                        </p>
-                    </div>
+                <!--FITNESS, CROSSFIT ET TRAINING-->
+                <div class="container p-4 col-lg-6">
+                  <div class="d-flex align-items-center h-25">
+                    <h5 class="fw-bold">FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE</h5>
+                  </div>
+                  <div class="col">
+                    <p>
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Coach personnel de sport à
+                        Biarritz</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Coach personnel de sport à
+                        Anglet</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Salle de sport BAB</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Fitness à Biarritz</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Sessions de Fitness à
+                        Anglet</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Fitness sur le BAB</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Autre mot clé + ville</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Autre mot clé + ville</a>,
+                      <a class="text-decoration-none text-light" href="404.html " target="_blank">Autre mot clé + ville</a>
+                    </p>
+                  </div>
                 </div>
+        
+              </div>
+              <!--FIN-->
             </div>
-
+        
             <div class="d-flex justify-content-center align-items-center text-end p-4 m-0 g-0 bg-dark text-light">
-                <p>Un site créé par<br>
-                    <span class="fw-bold">L'AGENCE 364 COM'</span>
-                </p>
-                <div>
-                    <img class="m-2" src="assets\img\icons\364.png" alt="logo 364">
-                </div>
+              <p>Un site créé par<br>
+                <span class="fw-bold">L'AGENCE 364 COM'</span>
+              </p>
+              <div>
+                <img class="m-2" src="assets\img\icons\364.png" alt="logo 364">
+              </div>
             </div>
-    </footer>
+        </footer>
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

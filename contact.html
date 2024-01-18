@@ -12,13 +12,89 @@
 
 <body>
 
-    <footer class="bg-gris">
+    <main>
 
-            <div class="row g-0 row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
+        <div class="container-fluid col-8">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
                 <div class="col">
-                    <img src="assets\img\gallery\image_map.jpg" class="w-100 img-fluid" alt="map">
+                    <div class="col">
+                        <h6 class="fw-bold">nos coordonées</h6>
+                    </div>
+                    <div class="col">
+                        <p>Studio Sport & Coaching</p>
+                        <p>01 Allée Marie Politzer</p>
+                        <p>64200 Biarritz</p>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Téléphone</p>
+                        <p>05 59 47 84 18</p>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Horaires</p>
+                        <p>Du Lundi au Vendredi</p>
+                        <p>dde 8h à 14h de 16 à 21h</p>
+                        <p>Le Samedi</p>
+                        <p>de 10h à 13h</p>
+                    </div>
+                    <div class="col">
+                        <p class="fw-bold">Email</p>
+                        <p>Contact (at) studiobiarritz.com</p>
+                        <p>ou via ce formulaire</p>
+                    </div>
+                </div>
+
+                <div class="container row">
+                    <div class="col">
+                        <ul>
+                            <div class="d-flex align-items-center">
+                                <li class="p-2 m-2">
+                                    <input type="text" id="name" name="user_name" placeholder="VOTRE NOM">
+                                </li>
+                                <li>
+                                    <input type="text" id="first_name" name="user_first_name"
+                                        placeholder="VOTRE PRENOM">
+                                </li>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <li class="p-2 m-2">
+                                    <input class="w-100" type="number" id="phone" name="user_number" placeholder="VOTRE TELEPHONE">
+                                </li>
+                                <li>
+                                    <input type="email" id="mail" name="user_mail" placeholder="VOTRE EMAIL">
+                                </li>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <li class="p-2 m-2">
+                                    <select name="sujet" id="sujet" required>
+                                        <option value="" disabled selected hidden>SUJET</option>
+                                        <option value="renseignement salle">RENSEIGNEMENT SALLE</option>
+                                        <option value="prix">RENSEIGNEMENT TARIF / PRIX / ABONNEMENT</option>
+                                        <option value="rendez-vous">DEMANDE DE RENDEZ-VOUS</option>
+                                        <option value="autre">AUTRE DEMANDE</option>
+                                    </select>
+                                </li>
+                            </div>
+                            <li class="p-2 m-2">
+                                <textarea id="msg" name="user_message" class="w-100" placeholder="VOTRE MESSAGE"></textarea>
+                            </li>
+                        </ul>
+                        <button type="submit" class="btn btn-warning">ENVOYER</button>
+
+                    </div>
                 </div>
             </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gris">
+
+        <div class="row g-0 row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-1">
+            <div class="col">
+                <img src="assets\img\gallery\image_map.jpg" class="w-100 img-fluid" alt="map">
+            </div>
+        </div>
 
         <div>
             <div class="container-fluid p-0">

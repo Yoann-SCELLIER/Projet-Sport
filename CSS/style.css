@@ -4,6 +4,9 @@
    box-sizing: border-box;
 }
 
+/* banniere 404 */
+   
+
 /* --- Spacing --- */
 
 .w-10 {
@@ -184,4 +187,10 @@ footer a:hover {
    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
    border-radius: var(--bs-btn-border-radius);
    background-color: var(--bs-btn-bg);
+}
+
+/* boutton training */
+
+.px-9 {
+   padding: 0rem 4rem 0rem 4rem !important;
 }

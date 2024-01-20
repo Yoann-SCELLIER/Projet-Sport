@@ -36,20 +36,27 @@
    text-align: end !important;
 }
 
-/*padding*/
+/* --- padding --- */
 .px-lg-6 {
    padding-right: 14rem !important;
    padding-left: 14rem !important;
 }
 
-/* FOND HTML */
-
-/* FOOTER */
-
 .p-10 {
    padding: 5rem;
 }
 
+/* FOND HTML */
+
+/* --- Footer--- */
+footer a:hover {
+   color: rgb(191, 148, 92) !important;
+}
+
+/* --- FIN Footer--- */
+
+
+/* --- Couleurs--- */
 .bg-gray {
    background-color: rgb(56, 55, 55);
 }
@@ -58,18 +65,9 @@
    background-color: rgb(216, 205, 205);
 }
 
+/* --- FIN Couleurs--- */
 
 
-footer a:hover {
-   color: rgb(191, 148, 92) !important;
-}
-
-/* .foot-hr::before {
-   content: '';
-   width: 10%;
-   border-bottom: 3px solid #ccc;
-   margin-right: 0.5em;
-  } */
 
 /* ---------- Section Activités ----------  */
 #act1 {
@@ -131,10 +129,6 @@ footer a:hover {
 /* ---------- FIN Section Activités ----------  */
 
 /* ---------- Section Actualités ----------  */
-
-
-
-
 .plus-hr a::after {
    content: '';
    border-bottom: solid;
@@ -148,9 +142,9 @@ footer a:hover {
    width: 100%;
 }
 
-.ending {
-   background: red;
-}
+
+/* ---------- FIN Section Actualités ----------  */
+
 /* boutton formulaire */
 
 .btn-form {
@@ -185,3 +179,55 @@ footer a:hover {
    border-radius: var(--bs-btn-border-radius);
    background-color: var(--bs-btn-bg);
 }
+
+/* --- navbar --- */
+
+.fs-xx {
+   font-size: calc(4px + 0.8vw )!important;
+
+}
+
+.w-xx {
+   width: calc(50px + 8vw  )!important ;
+   height: auto;
+}
+
+.w-bb {
+   width:  3vw !important ;
+}
+
+.navbar-toggler {
+   border: solid 1px !important;
+   color: #CBAC6B !important;
+   background-color: #CBAC6B !important;
+}
+
+.dropdown-menu {
+   border-radius: 0 !important;
+   background-color: black !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+   background-color: transparent !important;
+}
+
+.dropdown-content a:hover {
+   background-color: transparent;
+}
+
+
+
+.navbar-nav .nav-item:hover  {
+   background-color: #CBAC6B ;
+}
+
+header nav .dropdown-menu .dropdown-item a:hover {
+   color: #CBAC6B !important;
+}
+
+
+.navbar-nav .nav-item {
+   box-sizing: border-box;
+}
+/* --- FIN navbar --- */
+

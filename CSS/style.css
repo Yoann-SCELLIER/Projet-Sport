@@ -36,20 +36,17 @@
    text-align: end !important;
 }
 
-/*padding*/
+/* --- padding --- */
 .px-lg-6 {
    padding-right: 14rem !important;
    padding-left: 14rem !important;
 }
 
-/* FOND HTML */
-
-/* FOOTER */
-
 .p-10 {
    padding: 5rem;
 }
 
+/* --- Couleurs--- */
 .bg-gray {
    background-color: rgb(56, 55, 55);
 }
@@ -58,18 +55,112 @@
    background-color: rgb(216, 205, 205);
 }
 
+/* --- FIN Couleurs--- */
+
+/* FOND HTML */
+
+@font-face {
+   font-family: 'oswald'; /* Choose a name for your font */
+   src: url('../assets/fonts/Oswald-Regular.ttf') ;
+   font-weight: normal;
+   font-style: normal;
+ }
+ .oswald {
+   font-family: "oswald" !important;
+ }
+h1,h2,h3, h4,h5,h6 {
+   font-family: "oswald" !important;
+}
+/* --- navbar --- */
+
+.fs-xx {
+   font-size: calc(6px + 0.8vw) !important;
+
+}
+
+.w-xx {
+   width: calc(50px + 8vw) !important;
+   height: auto;
+}
+
+.w-bb {
+   width: 3vw !important;
+}
+
+.navbar-toggler {
+   border: solid 1px !important;
+   color: #CBAC6B !important;
+   background-color: #CBAC6B !important;
+}
+
+.dropdown-menu {
+   border-radius: 0 !important;
+   background-color: black !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+   background-color: transparent !important;
+}
+
+.dropdown-content a:hover {
+   background-color: transparent;
+}
 
 
+
+.navbar-nav .nav-item:hover {
+   background-color: #CBAC6B;
+}
+
+header nav .dropdown-menu .dropdown-item a:hover {
+   color: #CBAC6B !important;
+}
+
+
+.navbar-nav .nav-item {
+   box-sizing: border-box;
+}
+
+/* --- FIN navbar --- */
+
+
+/* --- Carousel --- */
+
+.carousel-indicators button {
+   width: 10px !important;
+   height: 10px !important;
+   background-color: transparent !important;
+   border: 2px solid white !important;
+   border-radius: 100%;
+}
+
+.hw-info {
+   height: clamp(30px, 45px, 50px) !important;
+   width: clamp(130px, 140px, 150px) !important;
+}
+
+.button-info {
+
+   border: 2px solid white;
+   background: transparent !important;
+   color: white;
+   font-weight: bold;
+}
+
+.fs-10 {
+   font-size: calc(5px + 1.5vw) !important;
+}
+
+/* --- FIN Carousel --- */
+
+
+/* --- Footer--- */
 footer a:hover {
    color: rgb(191, 148, 92) !important;
 }
 
-/* .foot-hr::before {
-   content: '';
-   width: 10%;
-   border-bottom: 3px solid #ccc;
-   margin-right: 0.5em;
-  } */
+/* --- FIN Footer--- */
+
 
 /* ---------- Section Activités ----------  */
 #act1 {
@@ -79,8 +170,6 @@ footer a:hover {
    background-repeat: no-repeat;
    background-position: center center;
    margin: 0;
-   background-color: brown;
-
 }
 
 #act2 {
@@ -128,13 +217,19 @@ footer a:hover {
    width: 55%;
 }
 
+.footer-hr::before {
+   content: '';
+   display: block;
+   border-top: 2.2px solid;
+   width: 27px;
+   margin-top: 14px;
+   margin-right: 7px;
+}
+
+
 /* ---------- FIN Section Activités ----------  */
 
 /* ---------- Section Actualités ----------  */
-
-
-
-
 .plus-hr a::after {
    content: '';
    border-bottom: solid;
@@ -148,9 +243,35 @@ footer a:hover {
    width: 100%;
 }
 
-.ending {
-   background: red;
+/* ---------- FIN Section Actualités ----------  */
+
+/* --- Footer--- */
+footer a:hover {
+   color: rgb(191, 148, 92) !important;
 }
+
+/* --- FIN Footer--- */
+
+/* --- Formulaire de contacte --- */
+
+.form-control {
+   border-radius: 0 !important;
+}
+
+.form-group {
+   margin-right: 2% !important;
+
+}
+
+.form-select {
+   width: 102.5% !important;
+   border-radius: 0 !important;
+}
+
+.message-width {
+   width: 102.5% !important;
+}
+
 /* boutton formulaire */
 
 .btn-form {
@@ -185,3 +306,11 @@ footer a:hover {
    border-radius: var(--bs-btn-border-radius);
    background-color: var(--bs-btn-bg);
 }
+
+form .btn-form {
+   background-color: #CBAC6B !important;
+   border: #CBAC6B !important;
+   font-weight: bold !important;
+}
+
+/* --- FIN Formulaire de contacte --- */

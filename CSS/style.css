@@ -60,17 +60,26 @@
 /* FOND HTML */
 
 @font-face {
-   font-family: 'oswald'; /* Choose a name for your font */
-   src: url('../assets/fonts/Oswald-Regular.ttf') ;
+   font-family: 'oswald';
+   /* Choose a name for your font */
+   src: url('../assets/fonts/Oswald-Regular.ttf');
    font-weight: normal;
    font-style: normal;
- }
- .oswald {
-   font-family: "oswald" !important;
- }
-h1,h2,h3, h4,h5,h6 {
+}
+
+.oswald {
    font-family: "oswald" !important;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: "oswald" !important;
+}
+
 /* --- navbar --- */
 
 .fs-xx {
@@ -263,7 +272,7 @@ footer a:hover {
 
 }
 
-.form-select {
+.subject {
    width: 102.5% !important;
    border-radius: 0 !important;
 }

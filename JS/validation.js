@@ -86,6 +86,7 @@ messageInput.addEventListener("input",function (e){
 submitInput.addEventListener("submit",function (e){
     e.preventDefault();
     if (nomValid && prenomValid && telValid && mailValid && sujetValid && messageValid) {
+// API mail
         Email.send({
             SecureToken : "de2ae524-5e5e-4fae-9f63-34037862a6de",
             To : 'scellier.yoann@gmail.com',
